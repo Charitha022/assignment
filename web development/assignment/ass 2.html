@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Moving elements </title>
+<script type = "text/javascript" >
+function moveIt(movee, newTop, newLeft) 
+{
+dom = document.getElementById(movee).style;
+dom.top = newTop + "px";
+dom.left = newLeft + "px";
+}
+</script>
+</head>
+<body>
+<form action = "">
+<p>
+<label>
+horizantal:
+<input type = "text" id = "leftCoord" size = "5" />
+</label>
+<br />
+<label>
+vertical:
+<input type = "text" id = "topCoord" size = "5" />
+</label>
+<br />
+<input type = "button" value = "1" 
+onclick ="moveIt('a',
+document.getElementById('topCoord').value,
+document.getElementById('leftCoord').value)" />
+
+<input type = "button" value = "2" 
+onclick ="moveIt('b',
+document.getElementById('topCoord').value,
+document.getElementById('leftCoord').value)" />
+
+<input type = "button" value = "3" 
+onclick ="moveIt('c',
+document.getElementById('topCoord').value,
+document.getElementById('leftCoord').value)" />
+
+<input type = "button" value = "4" 
+onclick ="moveIt('d',
+document.getElementById('topCoord').value,
+document.getElementById('leftCoord').value)" />
+
+<input type = "button" value = "5" 
+onclick ="moveIt('e',
+document.getElementById('topCoord').value,
+document.getElementById('leftCoord').value)" />
+
+<input type = "button" value = "6" 
+onclick ="moveIt('f',
+document.getElementById('topCoord').value,
+document.getElementById('leftCoord').value)" />
+</p>
+</form>
+
+
+<img id="a" style = "position: absolute; top:115px; left:20px;" src="images/image1.jpg" width="300" height="auto"/>
+<img id="b" style = "position: absolute; top:115px; left:20px;" src="images/image2.webp" width="300" height="auto"/>
+<img id="c" style = "position: absolute; top:115px; left:20px;" src="images/image3.jpg" width="300" height="auto"/>
+<img id="d" style = "position: absolute; top:115px; left:20px;" src="images/image4.jpg" width="300" height="auto"/>
+<img id="e" style = "position: absolute; top:115px; left:20px;" src="images/image5.jpg" width="300" height="auto"/>
+<img id="f" style = "position: absolute; top:115px; left:20px;" src="images/image6.jpeg" width="400" height="auto"/>
+
+</body>
+</html>
